@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt br">
+    <head>
+        <meta charset="UTF-8">
+        <title>uTask 2.0</title>
+        <link rel="icon" href="css/uTask_logo.png">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body">
+        <h1>uTask 2.0</h1>
+        <a href="https://www.unect.com.br"><img id="theLogo" src="css/logo.png"></a>
+        <input type="text" id="theTask" placeholder="Adicionar tarefa...">
+        <button type="button" id="addTask" onClick="createTask()"><img src="css/blueButton.png"></button>
+        <button onClick="openConfig()" type="button" id="configButton" ><img src=css/configButton2.png></button> 
+        <div id="rectangleToDo">To-do</br></div>    
+        <div id="rectangleDoing">Doing</div>      
+        <div id="rectangleDone">Done</div>
+        <section id="configSect"  onClick="closeConfig()">
+            <div id="configurationBox">
+                <h2>Configurações</h2>
+                <p id="lineOne">Light Theme  <button type="button" id="lightButton"><img src="css/switch.png"></button></p>
+                <p>Plano de fundo</p>
+                <input type="text" id="backSelector" placeholder="Escolha seu papel de parede.">
+                <button type="button" id="sender" onClick="changeBack()"><img src="css/blueButton.png"></button>
+            
+            </div>
+        </section>
+    </body>
+    <script src="scripts.js"></script>
+
+</html>
